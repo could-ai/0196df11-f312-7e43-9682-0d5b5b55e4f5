@@ -83,12 +83,12 @@ jobs:
           echo 'platform :android do' >> ./usr/android/fastlane/Fastfile
           echo '  desc "Deploy to Google Play"' >> ./usr/android/fastlane/Fastfile
           echo '  lane :publish_to_play_store do' >> ./usr/android/fastlane/Fastfile
-          echo '    puts "Using package name: com.example.couldai_user_app"' >> ./usr/android/fastlane/Fastfile
+          echo '    puts "Using package name: app.couldai.ccc"' >> ./usr/android/fastlane/Fastfile
           echo '    ' >> ./usr/android/fastlane/Fastfile
           echo '    begin' >> ./usr/android/fastlane/Fastfile
           echo '      # Try publishing the app with completed status' >> ./usr/android/fastlane/Fastfile
           echo '      upload_to_play_store(' >> ./usr/android/fastlane/Fastfile
-          echo '        package_name: '"'"'com.example.couldai_user_app'"'"',' >> ./usr/android/fastlane/Fastfile
+          echo ': '"'"'app.couldai.ccc'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '        track: '"'"'internal'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '        aab: '"'"'../build/app/outputs/bundle/release/app-release.aab'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '        json_key_data: ENV['"'"'GOOGLE_PLAY_SERVICE_ACCOUNT_JSON'"'"'],' >> ./usr/android/fastlane/Fastfile
@@ -107,7 +107,7 @@ jobs:
           echo '        ' >> ./usr/android/fastlane/Fastfile
           echo '        # Try again with draft status' >> ./usr/android/fastlane/Fastfile
           echo '        upload_to_play_store(' >> ./usr/android/fastlane/Fastfile
-          echo '          package_name: '"'"'com.example.couldai_user_app'"'"',' >> ./usr/android/fastlane/Fastfile
+          echo ': '"'"'app.couldai.ccc'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '          track: '"'"'internal'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '          aab: '"'"'../build/app/outputs/bundle/release/app-release.aab'"'"',' >> ./usr/android/fastlane/Fastfile
           echo '          json_key_data: ENV['"'"'GOOGLE_PLAY_SERVICE_ACCOUNT_JSON'"'"'],' >> ./usr/android/fastlane/Fastfile
